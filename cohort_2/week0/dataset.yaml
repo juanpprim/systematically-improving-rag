@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=dataset_schema.json
+cases:
+- name: refund_query
+  inputs: How do I return a product?
+  expected_output: Refunds
+- name: informational_query
+  inputs: What is the return policy?
+  expected_output: Informational
+- name: shipping_query
+  inputs: How do I track my order?
+  expected_output: Shipping
+- name: account_query
+  inputs: How do I change my password?
+  expected_output: Account
+evaluators:
+- IsExactMatch
